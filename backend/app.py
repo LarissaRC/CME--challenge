@@ -3,7 +3,6 @@ from flask_cors import CORS
 from database import Database
 import json
 from datetime import datetime
-from openpyxl import Workbook
 
 app = Flask(__name__)
 CORS(app)
