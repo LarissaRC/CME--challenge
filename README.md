@@ -15,7 +15,7 @@ Este projeto é uma aplicação web composta por um backend em Flask e um fronte
     cd CME--challenge
 
 ### Configuração do Backend
-  
+  > Realize esta etapa em um terminal separado, a partir do diretório \CME--challenge\
  1. Instale as dependências do backend
     ```
 	pip install -r backend/requirements.txt
@@ -32,9 +32,10 @@ Este projeto é uma aplicação web composta por um backend em Flask e um fronte
 > O backend estará disponível em **http://127.0.0.1:5000**.
 
 ### Configurações do Frontend
+> Realize esta etapa em um terminal separado, a partir do diretório \CME--challenge\
 1. Instale as dependências do frontend
 	```
-	cd ../frontend/cme-api
+	cd frontend/cme-api
 	npm install
 	```
 
