@@ -50,7 +50,7 @@ function MaterialForm({ existingMaterial = {}, updateCallback }) {
 
   const onFailSubmit = async (e) => {
     e.preventDefault()
-    const data = { descricao, etapa_id: existingMaterial.id }
+    const data = { descricao, etapa_id: selectedEtapa }
     const url = `http://127.0.0.1:5000/api/material/${existingMaterial.id}/falha`
     const options = {
         method: "POST",
@@ -126,6 +126,21 @@ function MaterialForm({ existingMaterial = {}, updateCallback }) {
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
             />
+          </div>
+          <div>
+            <label>Selecione a Etapa:</label>
+            {etapas.map((etapa) => (
+              <div key={etapa.id}>
+                <input
+                  type="radio"
+                  id={`etapa-${etapa.id}`}
+                  name="etapa"
+                  value={etapa.id}
+                  onChange={(e) => setSelectedEtapa(e.target.value)}
+                />
+                <label htmlFor={`etapa-${etapa.id}`}>{etapa.nome}</label>
+              </div>
+            ))}
           </div>
           <button type="submit">Relatar Falha</button>
           <button type="button" onClick={() => setShowFailForm(false)}>Voltar</button>
