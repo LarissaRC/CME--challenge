@@ -20,7 +20,10 @@ Este projeto é uma aplicação web composta por um backend em Flask e um fronte
     ```
 	pip install -r backend/requirements.txt
     ```
-  
+  	> Se necessário atualize componentes específicos do Flask.
+	```
+	pip install --upgrade flask werkzeug
+	```
  3. Execute o servidor Flask
     ```
 	cd backend
