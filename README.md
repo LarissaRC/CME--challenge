@@ -1,4 +1,50 @@
 # CME--challenge
+Este projeto é uma aplicação web composta por um backend em Flask e um frontend em React para gerenciar materiais hospitalares e seu processo de esterilização.
+
+## Pré-requisitos
+
+-  Python 3.7+
+-   Node.js 14+
+-   npm (Node Package Manager)
+-   Git
+
+## Configuração do Ambiente
+### Clonando o Repositório
+
+    git clone https://github.com/LarissaRC/CME--challenge.git
+    cd CME--challenge
+
+### Configuração do Backend
+  
+ 1. Instale as dependências do backend
+    ```
+	pip install -r backend/requirements.txt
+    ```
+  
+ 3. Execute o servidor Flask
+    ```
+	cd backend
+	flask run
+    ```
+> O backend estará disponível em **http://127.0.0.1:5000**.
+
+### Configurações do Frontend
+1. Instale as dependências do frontend
+	```
+	cd ../frontend/cme-api
+	npm install
+	```
+
+3. Execute o servidor de desenvolvimento do React
+	```
+	npm run dev
+	```
+> O frontend estará disponível em **http://127.0.0.1:3000**.
+
+### Observações
+
+-   Certifique-se de que o backend está em execução antes de iniciar o frontend para garantir que a API esteja acessível.
+-   Caso encontre algum problema, verifique os logs no terminal onde o backend ou o frontend estão sendo executados.
 
 ## Entidades Principais
 
